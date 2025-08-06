@@ -14,6 +14,7 @@ URL:            http://themeforest.net/user/blue_design
 #0.4	hero-slider
 #0.5	footer
 #0.6	about-us-section
+      csr-section
 #0.7	service-section
 #0.8	why-choose-section
 #0.9	testimonials-section
@@ -3102,6 +3103,60 @@ img {
   padding-right: 8px;
 }
 
+/*--------------------------------------------------------------
+#0.7	csr-section
+--------------------------------------------------------------*/
+
+.gallery {
+  padding: 60px 0;
+  background-color: #fffcf0;
+}
+
+.gallery .image-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery .image-box {
+  position: relative;
+  width: 200px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.gallery .image-box:hover .overlay {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+#0.7	csr-section
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 #0.7	service-section
 --------------------------------------------------------------*/
