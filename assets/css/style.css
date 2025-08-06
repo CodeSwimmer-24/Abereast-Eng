@@ -2487,14 +2487,14 @@ img {
 @media (max-width: 991px) {
   .hero-style-1 .slide-title h2 {
     font-size: 50px;
-    font-size: 3.125rem;
+    font-size: 3.225rem;
   }
 }
 
 @media (max-width: 767px) {
   .hero-style-1 .slide-title h2 {
     font-size: 35px;
-    font-size: 2.1875rem;
+    font-size: 2.875rem;
   }
 }
 
@@ -3592,7 +3592,12 @@ img {
 
 @media (max-width: 991px) {
   .testimonials-section .testimonial-left-img-holder {
-    display: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .testimonials-section .testimonial-left-img-holder img {
+    width: 200px;
   }
 }
 
@@ -3864,6 +3869,23 @@ img {
     float: none;
   }
 }
+
+.team-section .team-grids .grid .img-holder img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .team-section .team-grids .grid .img-holder img {
+    width: 70%;
+  }
+}
+/* @media (max-width: 500px) {
+  .team-section .team-grids .grid .img-holder img {
+    width: 60%;
+  }
+} */
 
 .team-section .team-grids ul {
   list-style: none;
@@ -4156,12 +4178,12 @@ img {
 }
 
 .blog-section .blog-grids {
-  margin: 0 -15px;
+  /* margin: 0 -15px; */
 }
 
 @media (max-width: 767px) {
   .blog-section .blog-grids {
-    margin: 0 -7.5px;
+    /* margin: 0 -7.5px; */
   }
 }
 
@@ -4192,7 +4214,30 @@ img {
 }
 
 .blog-section .entry-media {
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+@media (max-width: 991px) {
+  .blog-section .entry-media {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .blog-section .blog-grids .grid {
+    width: 100%;
+  }
+}
+.blog-section .entry-media img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+@media (max-width: 991px) {
+  .blog-section .entry-media img {
+    padding: 10px;
+    width: 95%;
+  }
 }
 
 .blog-section .cats {
@@ -5250,9 +5295,7 @@ img {
 
 @media (max-width: 767px) {
   .service-single-section .service-single-content .benefit .img-holder {
-    width: 100%;
-    float: none;
-    margin: 45px 0;
+    display: none;
   }
 }
 
