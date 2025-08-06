@@ -31,8 +31,27 @@
     <style>
       .achievement img {
         width: 100%;
-        height: 200px;
+        height: 300px;
         object-fit: cover;
+        aspect-ratio: 3/4;
+      }
+      .achievement .blog-grids {
+        /* background-color: red; */
+        width: 100%;
+        display: flex;
+        gap: 20px;
+      }
+
+      .achievement .blog-grids .left {
+        display: flex;
+        flex-direction: column;
+      }
+      .achievement .blog-grids .right {
+        display: flex;
+        flex-direction: column;
+      }
+      .achievement .blog-grids .grid {
+        width: 90%;
       }
     </style>
   </head>
@@ -90,7 +109,13 @@
                 </li>
                 <li><a href="achievement.html">Achievement</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">abreast consultancy service</a></li>
+                <li>
+                  <a
+                    href="https://abreastconsultancyservices.com/"
+                    target="_blank"
+                    >abreast consultancy service</a
+                  >
+                </li>
               </ul>
             </div>
             <!-- end of nav-collapse -->
@@ -149,112 +174,123 @@
             <div class="row">
               <div class="col col-xs-12">
                 <div class="blog-grids">
-                  <div class="grid">
-                    <div class="entry-media">
-                      <img
-                        src="assets/images/top achievements/IMG_20190712_161654.jpg"
-                        alt
-                        height="200px"
-                      />
-                    </div>
-                    <div class="entry-body">
-                      <div class="cats">Features and awards</div>
-                      <h4>
-                        <a href="#"
-                          >The Best Vendor Contractor by the AIC SS Division -
-                          Spare Manufacturing, Tata Steel.</a
-                        >
-                      </h4>
-                      <p class="date">July 12 2019</p>
-                      <!-- <a href="#" class="read-more"
+                  <div class="left">
+                    <div class="grid">
+                      <div class="entry-media">
+                        <img
+                          src="assets/images/top achievements/IMG_20190712_161654.jpg"
+                          alt
+                        />
+                      </div>
+                      <div class="entry-body">
+                        <div class="cats">Features and awards</div>
+                        <h4>
+                          <a href="#"
+                            >The Best Vendor Contractor by the AIC SS Division -
+                            Spare Manufacturing, Tata Steel.</a
+                          >
+                        </h4>
+                        <p class="date">July 12 2019</p>
+                        <!-- <a href="#" class="read-more"
                       >Read More <i class="fi flaticon-next"></i
                     ></a> -->
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="grid">
-                    <div class="entry-media">
-                      <img
-                        src="assets/images/top achievements/WhatsApp Image 2025-08-05 at 8.43.35 PM (1) (1).jpeg"
-                        alt
-                        height="200px"
-                      />
-                    </div>
-                    <div class="entry-body">
-                      <div class="cats">Features and awards</div>
-                      <h4>
-                        <a href="#">CII focuses on achieving a safer future</a>
-                      </h4>
-                      <p class="date">Oct 26 2019</p>
-                      <!-- <a href="#" class="read-more"
+                    <div class="grid">
+                      <div class="entry-media">
+                        <img
+                          src="assets/images/top achievements/WhatsApp Image 2025-08-05 at 8.43.35 PM (1) (1).jpeg"
+                          alt
+                        />
+                      </div>
+                      <div class="entry-body">
+                        <div class="cats">Features and awards</div>
+                        <h4>
+                          <a href="#"
+                            >Pathway to zero harm: CII focuses on achieving a
+                            safer future</a
+                          >
+                        </h4>
+                        <p class="date">Oct 26 2019</p>
+                        <!-- <a href="#" class="read-more"
                       >Read More <i class="fi flaticon-next"></i
                     ></a> -->
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="grid">
-                    <div class="entry-media">
-                      <img
-                        src="assets/images/top achievements/WhatsApp Image 2025-08-05 at 8.43.35 PM (1).jpeg"
-                        alt
-                        height="200px"
-                      />
-                    </div>
-                    <div class="entry-body">
-                      <div class="cats">Features and awards</div>
-                      <h4>
-                        <a href="#">CII Saftey Award</a>
-                      </h4>
-                      <p class="date">Oct 26 2019</p>
-                      <!-- <a href="#" class="read-more"
+                    <div class="grid">
+                      <div class="entry-media">
+                        <img
+                          src="assets/images/top achievements/WhatsApp Image 2025-08-05 at 8.43.35 PM (1).jpeg"
+                          alt
+                        />
+                      </div>
+                      <div class="entry-body">
+                        <div class="cats">Features and awards</div>
+                        <h4>
+                          <a href="#">CII Saftey Award</a>
+                        </h4>
+                        <p class="date">Oct 26 2019</p>
+
+                        <!-- <a href="#" class="read-more"
                       >Read More <i class="fi flaticon-next"></i
                     ></a> -->
+                      </div>
                     </div>
                   </div>
-                  <div class="grid">
-                    <div class="entry-media">
-                      <img
-                        src="assets/images/top achievements/achieve 1.jpg"
-                        alt
-                        height="200px"
-                      />
-                    </div>
-                    <div class="entry-body">
-                      <div class="cats">Features and awards</div>
-                      <!-- <h4>
+                  <div class="right">
+                    <div class="grid">
+                      <div class="entry-media">
+                        <img
+                          src="assets/images/top achievements/achieve 1.jpg"
+                          alt
+                        />
+                      </div>
+                      <div class="entry-body">
+                        <div class="cats">Features and awards</div>
+                        <!-- <h4>
                       <a href="#">CII Saftey Award</a>
                     </h4> -->
-                      <p class="date">
-                        We are honored to be recognized as the Best Vendor for
-                        the year 2024 by the Hot Strip Mill – Mechanical
-                        Services Department (HSM MSD).
-                      </p>
-                      <!-- <a href="#" class="read-more"
-                      >Read More <i class="fi flaticon-next"></i
-                    ></a> -->
+                        <p class="date">
+                          We are honored to be recognized as the Best Vendor for
+                          the year 2024 by the Hot Strip Mill – Mechanical
+                          Services Department (HSM MSD).
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid">
-                    <div class="entry-media">
-                      <img
-                        src="assets/images/top achievements/achieve 2.jpg"
-                        alt
-                        height="200px"
-                      />
+                    <div class="grid">
+                      <div class="entry-media">
+                        <img
+                          src="assets/images/top achievements/achieve 2.jpg"
+                          alt
+                        />
+                      </div>
+                      <div class="entry-body">
+                        <div class="cats">Features and awards</div>
+
+                        <p class="date">
+                          We are proud to be recognized as the Best Vendor for
+                          our proactive and positive contribution to Safety
+                          Culture in 2023.
+                        </p>
+                      </div>
                     </div>
-                    <div class="entry-body">
-                      <div class="cats">Features and awards</div>
-                      <!-- <h4>
-                      <a href="#">CII Saftey Award</a>
-                    </h4> -->
-                      <p class="date">
-                        We are proud to be recognized as the Best Vendor for our
-                        proactive and positive contribution to Safety Culture in
-                        2023.
-                      </p>
-                      <!-- <a href="#" class="read-more"
-                      >Read More <i class="fi flaticon-next"></i
-                    ></a> -->
+                    <div class="grid">
+                      <div class="entry-media">
+                        <img
+                          src="assets/images/top achievements/achieve 3.jpg"
+                          alt
+                        />
+                      </div>
+                      <div class="entry-body">
+                        <div class="cats">Features and awards</div>
+
+                        <p class="date">
+                          Awarded for SHE EXCELLENCE AWARD (SMALL SCALE SERVICE
+                          SECTOR ) IN THE YEAR OF 2022-2023
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -347,7 +383,13 @@
                   <ul>
                     <li><a href="achievement.html">Achievement</a></li>
                     <li><a href="contact.html">Contact us</a></li>
-                    <li><a href="#">Abreast consultancy </a></li>
+                    <li>
+                      <a
+                        href="https://abreastconsultancyservices.com/"
+                        target="_blank"
+                        >Abreast consultancy
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
